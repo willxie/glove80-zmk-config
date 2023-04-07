@@ -24,6 +24,16 @@
 #include <dt-bindings/zmk/outputs.h>
 
 
+#define DEFAULT 0
+#define GAM 1
+#define LWR 2
+#define ADJ 3
+
+&mt {
+    tapping-term-ms = <150>;
+};
+
+
 / {
     /* Glove80 system behavior & macros */
     behaviors {
