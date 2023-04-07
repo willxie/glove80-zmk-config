@@ -130,7 +130,7 @@
             >;
         };
 
-        layer_gaming {
+        layer_Gaming {
             bindings = <
  &kp C_BRI_DN  &kp C_BRI_UP      &kp C_PREV      &kp C_NEXT         &kp C_PP                                                                                    &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP            &none  &kp PAUSE_BREAK
        &trans         &none           &none           &none            &none   &kp HOME                                                   &kp LEFT_PARENTHESIS  &kp KP_NUM  &kp KP_EQUAL  &kp KP_SLASH  &kp KP_MULTIPLY  &kp PRINTSCREEN
