@@ -109,8 +109,6 @@
             // |  ESC  |  A  |  S  |  D   |  F   |  G   |                                                 |  H   |   J   |   K   |  L   |   ;   |   '  |
             // |   `   |  Z  |  X  |  C   |  V   |  B   | LSHFT | LCTRL | LOWER | | LGUI  | RCTRL | RSHFT |  N   |   M   |   ,   |  .   |   /   | PGUP |
             // | MAGIC | HOME| END | LEFT | RIGHT|      | BSPC  | DEL   | LALT  | | RALT  | RET   | SPACE |      |  UP   | DOWN  |  [   |   ]   | PGDN |
-
-        default_layer {
             bindings = <
        &kp F1     &kp F2   &kp F3    &kp F4     &kp F5                                                                                               &kp F6     &kp F7    &kp F8    &kp F9    &kp F10
        &gresc     &kp N1   &kp N2    &kp N3     &kp N4    &kp N5                                                                             &kp N6  &kp N7     &kp N8    &kp N9    &kp N0    &kp EQUAL
@@ -147,21 +145,10 @@
             bindings = <
        &none     &none &none        &none      &none                                                                                    &none            &none            &none            &none           &bt BT_CLR_ALL
        &none     &bt_0 &bt_1        &bt_2      &bt_3      &none                                                         &none           &none            &none            &none            &none           &none
-       &none     &none &out OUT_BLE &none      &reset     &none                                                         &rgb_ug RGB_SPI &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG &none
+       &none     &none &out OUT_BLE &none      &sys_reset &none                                                         &rgb_ug RGB_SPI &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG &none
        &none     &none &out OUT_USB &none      &none      &none                                                         &rgb_ug RGB_SPD &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF &none
-       &tog GAM  &none &none        &bt BT_CLR &none      &bootloader   &none   &none  &none   &none   &none   &none    &bootloader     &none            &none            &none            &none           &reset
+       &tog GAM  &none &none        &bt BT_CLR &none      &bootloader   &none   &none  &none   &none   &none   &none    &bootloader     &none            &none            &none            &none           &sys_reset
        &tog GAM  &none &none        &none      &none                    &none   &none  &none   &none   &none   &none                    &none            &none            &none            &none           &none
-            >;
-        };
-
-        factory_test_layer {
-            bindings = <
-            &kp N0   &kp N6   &kp N2   &kp N8   &kp N4                                                                              &kp N4   &kp N8   &kp N2   &kp N6   &kp N0
-            &kp N1   &kp N7   &kp N3   &kp N9   &kp N5   &kp N0                                                            &kp N0   &kp N5   &kp N9   &kp N3   &kp N7   &kp N1
-            &kp N2   &kp N8   &kp N4   &kp N0   &kp N6   &kp N1                                                            &kp N1   &kp N6   &kp N0   &kp N4   &kp N8   &kp N2
-            &kp N3   &kp N9   &kp N5   &kp N1   &kp N7   &kp N2                                                            &kp N2   &kp N7   &kp N1   &kp N5   &kp N9   &kp N3
-            &kp N4   &kp N0   &kp N6   &kp N2   &kp N8   &kp N3   &kp N4   &kp N5   &kp N6      &kp N6   &kp N5   &kp N4   &kp N3   &kp N8   &kp N2   &kp N6   &kp N0   &kp N4
-            &kp N5   &kp N1   &kp N7   &kp N3   &kp N9            &kp N7   &kp N8   &kp N9      &kp N9   &kp N8   &kp N7            &kp N9   &kp N3   &kp N7   &kp N1   &kp N5
             >;
         };
     };
