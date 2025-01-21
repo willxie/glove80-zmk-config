@@ -1,6 +1,5 @@
 # MoErgo Glove80 Custom Configuration for ZMK
 
-
 ![MoErgo Logo](moergo_logo.png)
 
 This repo is the official ZMK configuration of the MoErgo Glove80 wireless split contoured keyboard. Use it to develop your own keymap and easily build your own ZMK firmware to run on your Glove80.
@@ -36,4 +35,3 @@ To locate your firmware files and reflash your Glove80...
 6. Flash the firmware to Glove80 according to the user documentation on the official Glove80 Glove80 Support website (linked above)
 
 Your keyboard is now ready to use.
-
